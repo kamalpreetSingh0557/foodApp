@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { PASSWORD } = require("../secrets");
+const { PASSWORD } = require("../../secrets");
 let dbLink
     = `mongodb+srv://admin:${PASSWORD}@cluster0.3gwfq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 mongoose.connect(dbLink, {
